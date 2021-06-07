@@ -8,7 +8,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
-
 import java.io.*;
 
 public class Hospital3Controller extends Features implements ErrorHandler {

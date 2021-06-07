@@ -1,12 +1,13 @@
 .table-view2 {
     -fx-background-color: #D5CBEb;
     -fx-border-color: #371897;
+    
 }
 
 .table-view2 .column-header,
 .table-view2 .column-header-background .filler {
     -fx-font-family: 'Roboto';
-    -fx-background-color:  #6622CC; 
+    -fx-background-color: #6622CC; 
 }
 
 .table-view2 .column-header .label{
@@ -20,30 +21,26 @@
     -fx-background-color: #D5CBEb;
 }
 
-.table-view2 .table-cell{
-    -fx-background-color: #D5CBEb;
-}
-
-.table-view2 .table-cell:focused{
-    -fx-background-color: #371897;
-}
-
-.table-view2 .table-cell::selection{
-    -fx-text-fill: #371897;
-    
-}
-
 .table-view2 .table-cell:even{
     -fx-background-color: #D5CBEb;
 }
 
 .table-view2 .table-cell:odd{
     -fx-background-color: #dcd3eb;
+
 }
 
+.table-row-cell:selected {
+   -fx-background-color: whitesmoke; 
+   -fx-text-background-color: red;
+   /*-fx-border-color: black;*/
+   
+}
+
+
 .table-view2 .increment-button ,.table-view2 .decrement-button {
-    -fx-background-color:transparent;
-	-fx-background-radius: 2em;
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
 
 }
 

@@ -37,7 +37,7 @@
 
 .button1{
     -fx-font-family: 'Roboto';
-    -fx-font-size: 18;
+    -fx-font-size: 16;
     -fx-font-weight: 600;
     -fx-text-allign: center;
     -fx-text-fill: #ffffff;
@@ -58,7 +58,7 @@
 
 .button2{
     -fx-font-family: 'Roboto';
-    -fx-font-size: 18;
+    -fx-font-size: 15;
     -fx-text-fill: #371897;
 }
 
@@ -74,7 +74,7 @@
     -fx-background-radius: 25;
     -fx-border-radius: 25;
     -fx-font-family: 'Roboto';
-    -fx-font-size: 14;
+    -fx-font-size: 12;
 }
 
 
@@ -89,11 +89,14 @@
 .label2{
     -fx-font-family: 'Roboto';
     -fx-font-size: 16;
-    -fx-text-fill: black;
+    -fx-text-fill: red;
+    
 }
 .label2:hover{
-    -fx-background-color: rgb(168, 168, 168);
-    -fx-text-fill: #431FA0;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 20px;
+    -fx-text-fill: red;
+    
 }
 
 .table1{

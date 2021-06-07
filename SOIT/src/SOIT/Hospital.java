@@ -1,9 +1,7 @@
 package SOIT;
 
-import java.io.Serializable;
-
-public class Hospital implements Serializable {
-    public String UpdateTime;
+public class Hospital{
+    private String UpdateTime;
     private String Name;
     private String Address;
     private String ICU;
@@ -21,11 +19,6 @@ public class Hospital implements Serializable {
         UpdateTime = Time;
     }
 
-    public Hospital(String icu, String oxygen, String key) {
-        ICU = icu;
-        this.Oxygen = oxygen;
-        this.key = key;
-    }
 
     public String getUpdateTime() {
         return UpdateTime;
@@ -89,12 +82,10 @@ public class Hospital implements Serializable {
 
     @Override
     public String toString() {
-        return "Hospital{" +
-                "Name='" + Name + '\'' +
-                ", Address='" + Address + '\'' +
-                ", ICU='" + ICU + '\'' +
-                ", Oxygen='" + Oxygen + '\'' +
-                ", Contact='" + Contact + '\'' +
-                '}';
+        return  "Name= " + Name + '\n' +
+                "Address= " + Address + '\n' +
+                "ICU= " + ICU + '\n' +
+                "Oxygen= " + Oxygen + '\n' +
+                "Contact= " + Contact + '\n';
     }
 }
