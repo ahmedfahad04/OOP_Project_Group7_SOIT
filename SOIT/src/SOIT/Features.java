@@ -80,22 +80,6 @@ public class Features extends Dependencies{
         tb.setItems(dataList); // adding to tableview
     }
 
-
-    @Override
-    public File ReadFile(String fileName) {
-
-        File f = new File(fileName);
-        if (!f.exists()) {
-            try {
-                f.createNewFile();
-                System.out.println("New file created successfully!!");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return f;
-    }
-
     @Override
     public void WriteFile(File fp, String content, boolean append) throws IOException {
 
@@ -106,6 +90,7 @@ public class Features extends Dependencies{
 
     @Override
     public void SearchEngine(TextField tf, TableView tb) {
+
 
         tf.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(hospital -> {
@@ -133,17 +118,6 @@ public class Features extends Dependencies{
         SortedList<Hospital> sortedData = new SortedList<>(filteredData);
         sortedData.comparatorProperty().bind(tb.comparatorProperty());
         tb.setItems(sortedData);
-        
-        System.out.println("Total Size: " + filteredData.size());
-    }
-
-    @Override
-    public <T> void LoadFXML(T event, String fxmlName) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxmlName)));
-        Stage stage = (Stage) ((Node) event).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
 
     @Override
