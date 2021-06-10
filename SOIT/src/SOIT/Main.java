@@ -24,7 +24,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("start.fxml")));
         Scene scene = new Scene(root);
         stage.getIcons().add(new Image(Objects.requireNonNull(Main.class.getResourceAsStream("Appicon.png"))));
-        stage.setTitle("Supplementary ICU and Oxygen Tracker");
+        stage.setTitle("S O I T");
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);

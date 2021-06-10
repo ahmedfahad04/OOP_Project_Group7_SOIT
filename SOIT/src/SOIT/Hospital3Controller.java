@@ -149,6 +149,7 @@ public class Hospital3Controller extends Features implements ErrorHandler {
         txtContact.clear();
     }
 
+    
     public void checkEmptyFields(File f, String... arguments) throws IOException {
         String name = arguments[0];
         String location = arguments[1];
